@@ -1,4 +1,4 @@
-const Login = () => {
+const LoginData = () => {
   return (
     <>
       <div className="form-group">
@@ -36,4 +36,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginData;
