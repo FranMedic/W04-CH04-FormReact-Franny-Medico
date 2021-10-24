@@ -46,7 +46,7 @@ const FormUserData = () => {
             type="text"
             className="form-control"
             id="age"
-            value="27"
+            value="10"
             readOnly
           ></input>
         </div>
