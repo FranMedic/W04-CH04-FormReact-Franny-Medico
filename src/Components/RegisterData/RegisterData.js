@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import Context from "../../Context/Context";
+import Context from "../Context/Context";
 
-const PersonalData = () => {
+const RegisterData = () => {
   const { userData, changeData } = useContext(Context);
   return (
     <>
@@ -43,4 +43,4 @@ const PersonalData = () => {
   );
 };
 
-export default PersonalData;
+export default RegisterData;
