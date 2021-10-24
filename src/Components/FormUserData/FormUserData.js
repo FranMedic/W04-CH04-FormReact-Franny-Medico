@@ -41,3 +41,5 @@ const FormUserData = () => {
     </>
   );
 };
+
+export default FormUserData;
