@@ -5,36 +5,62 @@ const FormUserData = () => {
   return (
     <>
       <div className="form-group">
-        <label htmlFor="username">Username</label>
+        <label htmlFor="firstName">Name</label>
         <input
           type="text"
           className="form-control"
-          id="username"
-          placeholder="Enter username"
-          value={userData.username}
+          id="firstName"
+          placeholder="Enter name"
+          value={userData.firstName}
           onChange={changeData}
           required
         ></input>
       </div>
       <div className="form-group">
-        <label htmlFor="password">Password</label>
+        <label htmlFor="lastName">Last Name</label>
         <input
-          type="password"
+          type="text"
           className="form-control"
-          id="password"
-          placeholder="Enter your password"
-          value={userData.password}
+          id="lastName"
+          placeholder="Enter your last name"
+          value={userData.lastName}
           onChange={changeData}
           required
         ></input>
       </div>
+      <div className="row">
+        <div className="form-group col-10">
+          <label htmlFor="birthDate">Date of Birth</label>
+          <input
+            type="date"
+            className="form-control"
+            id="birthDate"
+            value={userData.birthDate}
+            onChange={changeData}
+            required
+          ></input>
+        </div>
+        <div className="form-group col-2">
+          <label htmlFor="age">Age</label>
+          <input
+            type="text"
+            className="form-control"
+            id="age"
+            value="27"
+            readOnly
+          ></input>
+        </div>
+      </div>
       <div className="form-group">
-        <label htmlFor="form_password-repeat">Repeat your password</label>
+        <label htmlFor="email">Email</label>
         <input
-          type="password"
+          type="email"
           className="form-control"
-          id="form_password-repeat"
-          placeholder="Repeat your password"
+          id="email"
+          pattern="[^ @]*@[^ @]*"
+          placeholder="Enter your email"
+          value={userData.email}
+          onChange={changeData}
           required
         ></input>
       </div>
